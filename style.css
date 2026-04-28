@@ -1,0 +1,1038 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Gogol";
+  src: url("./regular/gogol.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Involve";
+  src: url("./regular/involve.woff") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Involve", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 640px);
+  padding-right: calc(50% - 640px);
+}
+
+.header-main {
+  background-image: url(./img/back.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 1024px;
+  background-color: #E9EAD7;
+}
+.header-main__menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header-main__text {
+  color: rgb(234, 234, 215);
+  font-family: "Gogol";
+  font-style: Regular;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 115px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 352px;
+}
+.header-main__subtext {
+  color: rgb(234, 234, 215);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.logo-main__text {
+  color: rgb(234, 234, 215);
+  font-family: "Gogol";
+  font-style: Regular;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.nav-main__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.nav-main__link {
+  color: rgb(234, 234, 215);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.header {
+  background-color: #E9EAD7;
+}
+.header__menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo__text {
+  color: #23312C;
+  font-family: "Gogol";
+  font-style: Regular;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.nav__link {
+  color: #23312C;
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.main-content {
+  background-color: #E9EAD7;
+}
+
+.about-us {
+  padding-top: 56px;
+}
+.about-us__title {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+}
+.about-us__text {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.format {
+  padding-top: 60px;
+}
+.format__title {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+}
+.format__text {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.scheme {
+  padding-top: 60px;
+}
+.scheme__title {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+}
+.scheme__text {
+  padding-top: 30px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.scheme__containers {
+  padding-top: 30px;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+.scheme__img {
+  width: 800px;
+  height: 488px;
+  border-radius: 20px;
+  background: rgb(184, 184, 184);
+}
+
+.history {
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #23312C;
+  width: 100%;
+}
+.history__title {
+  padding-top: 197px;
+  color: rgb(233, 234, 215);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+}
+.history__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 222px;
+  padding-top: 30px;
+}
+.history__text {
+  color: rgb(233, 234, 215);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.history__img {
+  width: 897px;
+  height: 595px;
+  border-radius: 20px;
+}
+
+.principles__title {
+  padding-top: 60px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+}
+.principles__intro {
+  padding-top: 30px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.principles__list {
+  padding-left: 30px;
+}
+.principles__item {
+  padding-top: 4px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Oblique;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.principles__ecology {
+  padding-top: 30px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.music__title {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+}
+.music__text {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.hosting {
+  padding-bottom: 87px;
+}
+.hosting__title {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+}
+.hosting__container {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 10px;
+}
+.hosting__text {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.hosting__link {
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(228, 108, 83);
+}
+
+.afisha-intro__heading {
+  color: rgb(35, 49, 44);
+  font-family: "Gogol";
+  font-style: Regular;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 115px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 76px;
+  padding-bottom: 10px;
+}
+.afisha-intro__description {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.modern-divider {
+  width: 100%;
+  height: 0;
+  border: 2px solid rgb(228, 108, 83);
+  margin-top: 29px;
+}
+
+.events__list {
+  padding-top: 30px;
+}
+.events__header {
+  color: rgb(35, 49, 44);
+  font-family: "Gogol";
+  font-style: Regular;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 77px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 31px;
+}
+.events__title {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 30px;
+}
+.events__description {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.afisha-note {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.afisha-note__title {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 30px;
+}
+.afisha-note__text {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.archive__heading {
+  padding-top: 56px;
+  color: rgb(0, 0, 0);
+  font-family: "Gogol";
+  font-style: Regular;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 115px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.archive__subtitle {
+  padding-top: 30px;
+  color: rgb(0, 0, 0);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.archive__description {
+  padding-top: 60px;
+  color: rgb(0, 0, 0);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.archive__list {
+  padding-top: 30px;
+  padding-bottom: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+}
+.archive__item {
+  max-width: 360px;
+}
+.archive__img {
+  border-radius: 20px;
+  background: rgb(184, 184, 184);
+  width: 360px;
+  height: 360px;
+}
+.archive__title {
+  padding-top: 10px;
+  color: rgb(0, 0, 0);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.archive__event-description {
+  padding-top: 10px;
+  color: rgb(0, 0, 0);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.cooperation__heading {
+  padding-top: 56px;
+  color: rgb(35, 49, 44);
+  font-family: "Gogol";
+  font-style: Regular;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 115px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.cooperation__intro {
+  padding-top: 30px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.cooperation__about {
+  padding-top: 60px;
+}
+.cooperation__rider {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cooperation__technical {
+  padding-top: 60px;
+}
+.cooperation__rules {
+  padding-top: 60px;
+}
+.cooperation__apply {
+  padding-top: 60px;
+}
+
+.about__title {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+}
+.about__text {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.rent__title {
+  padding-top: 60px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+}
+.rent__text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.rent__list {
+  padding-left: 30px;
+}
+.rent__item {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Oblique;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 4px;
+}
+
+.rider__title {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+  padding-bottom: 30px;
+}
+.rider__item {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 4px;
+}
+.rider__list {
+  padding-left: 30px;
+}
+.rider__img {
+  width: 620px;
+  height: 826px;
+  color: #23312C;
+}
+
+.technical__title {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+  padding-bottom: 30px;
+}
+.technical__item {
+  padding-top: 4px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.technical__list {
+  padding-left: 30px;
+}
+
+.rules__title {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+}
+.rules__organisation {
+  padding-top: 10px;
+}
+.rules__phylosophy {
+  padding-top: 30px;
+}
+
+.organisation__title {
+  color: rgb(0, 0, 0);
+  font-family: "Involve";
+  font-style: Medium;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+  padding-bottom: 30px;
+}
+.organisation__item {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 4px;
+}
+
+.philosophy__title {
+  color: rgb(0, 0, 0);
+  font-family: "Involve";
+  font-style: Medium;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.philosophy__item {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 4px;
+}
+.philosophy__list {
+  padding-left: 30px;
+}
+
+.apply__title {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+}
+.apply__text {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.apply__contact {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 56px;
+}
+
+.team {
+  padding-bottom: 26px;
+}
+.team__heading {
+  padding-top: 56px;
+  color: rgb(35, 49, 44);
+  font-family: "Gogol";
+  font-style: Regular;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 115px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.team__subtitle {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.team__members {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.team__title {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: lowercase;
+}
+
+.member-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.member-right {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.member__img {
+  width: 260px;
+  height: 260px;
+  border-radius: 20px;
+  background: rgb(184, 184, 184);
+}
+.member__text {
+  align-items: left;
+}
+.member__name {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.member__description {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.resident__name {
+  padding-bottom: 10px;
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Medium;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.resident__description {
+  color: rgb(35, 49, 44);
+  font-family: "Involve";
+  font-style: Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.footer-main {
+  width: 100%;
+  height: 215px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 255px;
+  padding: 20px 80px 20px 80px;
+  background-color: #E9EAD7;
+  color: #23312C;
+}
+.footer-main__logo {
+  color: rgb(35, 49, 44);
+  font-family: "Gogol";
+  font-style: Regular;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #23312C;
+}
+.footer-main__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+.footer-main__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.footer-main__link {
+  color: #23312C;
+}
+
+.contacts-main {
+  color: #23312C;
+}
+
+.footer {
+  width: 100%;
+  height: 215px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 255px;
+  padding: 20px 80px 20px 80px;
+  background-color: #23312C;
+  color: #E9EAD7;
+}
+.footer__logo {
+  color: rgb(35, 49, 44);
+  font-family: "Gogol";
+  font-style: Regular;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #E9EAD7;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  color: #E9EAD7;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.footer__link {
+  color: #E9EAD7;
+}
+
+.contacts {
+  color: #E9EAD7;
+}/*# sourceMappingURL=style.css.map */

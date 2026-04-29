@@ -483,6 +483,10 @@ img {
   padding-top: 10px;
 }
 
+.afisha__img {
+  width: 100%;
+}
+
 .afisha-note {
   padding-top: 30px;
   padding-bottom: 50px;
@@ -617,7 +621,7 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .cooperation__technical {
   padding-top: 60px;
@@ -632,7 +636,7 @@ img {
   padding-top: 30px;
   width: 100%;
   align-self: center;
-  transition: opacity 1s ease-in-out; /* Длительность перехода */
+  border-radius: 20px;
 }
 
 .about__title {
@@ -728,6 +732,7 @@ img {
   width: 620px;
   height: 826px;
   color: #23312C;
+  border-radius: 20px;
 }
 
 .technical__title {
@@ -1068,6 +1073,94 @@ img {
   color: #E9EAD7;
 }
 
+.cooperation__img {
+  border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header-main {
+    height: auto;
+    min-height: 760px;
+    background-size: cover;
+    background-position: center;
+  }
+  .header-main__menu {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .header-main__text {
+    margin-top: 200px;
+    font-size: clamp(62px, 9.2vw, 84px);
+    line-height: 1.05;
+  }
+  .header-main__subtext {
+    font-size: 34px;
+    line-height: 1.15;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .logo-main__text {
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .nav-main__list,
+  .nav__list {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .nav-main__link,
+  .nav__link {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .scheme__containers,
+  .history__container,
+  .hosting__container,
+  .cooperation__rider,
+  .member-left,
+  .member-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .scheme__img,
+  .history__img,
+  .rider__img,
+  .archive__img,
+  .member__img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .history {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .history__title {
+    padding-top: 80px;
+  }
+  .history__container {
+    padding-bottom: 80px;
+  }
+  .footer,
+  .footer-main {
+    height: auto;
+    gap: 40px;
+    padding: 32px 24px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .history__title {
+    padding-top: 64px;
+  }
+  .history__container {
+    padding-bottom: 64px;
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -1133,13 +1226,11 @@ img {
   }
   .nav-main__link,
   .nav__link {
-    font-size: 10px;
-    line-height: 14px;
-    white-space: nowrap;
+    font-size: 8px;
   }
   .logo-main__text,
   .logo__text {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 19px;
   }
   .about-us {
@@ -1219,6 +1310,9 @@ img {
   .resident__description {
     font-size: 18px;
     line-height: 24px;
+  }
+  .cooperation__rider {
+    flex-wrap: wrap;
   }
   .archive__list {
     gap: 24px;
@@ -1317,89 +1411,5 @@ img {
   .resident__description {
     font-size: 16px;
     line-height: 22px;
-  }
-}
-@media (max-width: 1024px) {
-  .center {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .header-main {
-    height: auto;
-    min-height: 760px;
-    background-size: cover;
-    background-position: center;
-  }
-  .header-main__menu {
-    padding-top: 18px;
-    padding-bottom: 18px;
-  }
-  .header-main__text {
-    margin-top: 200px;
-    font-size: clamp(62px, 9.2vw, 84px);
-    line-height: 1.05;
-  }
-  .header-main__subtext {
-    font-size: 34px;
-    line-height: 1.15;
-    max-width: 680px;
-    margin: 0 auto;
-  }
-  .logo-main__text {
-    font-size: 26px;
-    line-height: 31px;
-  }
-  .nav-main__list,
-  .nav__list {
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  .nav-main__link,
-  .nav__link {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .scheme__containers,
-  .history__container,
-  .hosting__container,
-  .cooperation__rider,
-  .member-left,
-  .member-right {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .scheme__img,
-  .history__img,
-  .rider__img,
-  .archive__img,
-  .member__img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-  .history {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .history__title {
-    padding-top: 80px;
-  }
-  .history__container {
-    padding-bottom: 80px;
-  }
-  .footer,
-  .footer-main {
-    height: auto;
-    gap: 40px;
-    padding: 32px 24px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  .history__title {
-    padding-top: 64px;
-  }
-  .history__container {
-    padding-bottom: 64px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -479,6 +479,9 @@ img {
         padding-top: 10px;
     }
 }
+.afisha__img {
+    width: 100%;
+}
 .afisha-note {
     padding-top: 30px;
     padding-bottom: 50px;
@@ -614,7 +617,7 @@ img {
         justify-content: space-between;
         align-items: flex-start;
         gap: 30px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     &__technical {
         padding-top: 60px;
@@ -629,7 +632,7 @@ img {
         padding-top: 30px;
         width: 100%;
         align-self: center;
-        transition: opacity 1s ease-in-out; /* Длительность перехода */
+        border-radius: 20px;
     }
 }
 .about {
@@ -729,6 +732,7 @@ img {
         width: 620px;
         height: 826px;
         color: #23312C;
+        border-radius: 20px;
     }
 }
 .technical {
@@ -1075,6 +1079,9 @@ img {
 .contacts {
     color: #E9EAD7;
 }
+.cooperation__img {
+    border-radius: 20px;
+}
 
-@import "_mobile_style";
 @import "_tablet_style";
+@import "_mobile_style";

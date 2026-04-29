@@ -73,14 +73,12 @@
 
     .nav-main__link,
     .nav__link {
-        font-size: 10px;
-        line-height: 14px;
-        white-space: nowrap;
+        font-size: 8px;
     }
 
     .logo-main__text,
     .logo__text {
-        font-size: 16px;
+        font-size: 12px;
         line-height: 19px;
     }
 
@@ -167,6 +165,9 @@
     .resident__description {
         font-size: 18px;
         line-height: 24px;
+    }
+    .cooperation__rider {
+        flex-wrap: wrap;
     }
 
     .archive__list {

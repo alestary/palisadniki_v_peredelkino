@@ -1,0 +1,101 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .header-main {
+        height: auto;
+        min-height: 760px;
+        background-size: cover;
+        background-position: center;
+
+        &__menu {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+
+        &__text {
+            margin-top: 200px;
+            font-size: clamp(62px, 9.2vw, 84px);
+            line-height: 1.05;
+        }
+
+        &__subtext {
+            font-size: 34px;
+            line-height: 1.15;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+    }
+
+    .logo-main__text {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    .nav-main__list,
+    .nav__list {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .nav-main__link,
+    .nav__link {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .scheme__containers,
+    .history__container,
+    .hosting__container,
+    .cooperation__rider,
+    .member-left,
+    .member-right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .scheme__img,
+    .history__img,
+    .rider__img,
+    .archive__img,
+    .member__img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .history {
+        padding-left: 24px;
+        padding-right: 24px;
+
+        &__title {
+            padding-top: 80px;
+        }
+
+        &__container {
+            padding-bottom: 80px;
+        }
+    }
+
+    .footer,
+    .footer-main {
+        height: auto;
+        gap: 40px;
+        padding: 32px 24px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .history {
+        &__title {
+            padding-top: 64px;
+        }
+
+        &__container {
+            padding-bottom: 64px;
+        }
+    }
+}

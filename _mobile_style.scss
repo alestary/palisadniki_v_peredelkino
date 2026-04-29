@@ -1,0 +1,281 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .logo-main__text,
+    .logo__text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .header-main {
+        min-height: 560px;
+        background-size: cover;
+        background-position: center;
+
+        &__menu {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        &__text {
+            margin-top: 82px;
+            font-size: clamp(54px, 12vw, 66px);
+            line-height: 1.02;
+            text-align: center;
+        }
+
+        &__subtext {
+            margin-top: 12px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 338px;
+            font-size: 18px;
+            line-height: 1.28;
+            text-align: center;
+        }
+    }
+
+    .header__menu {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .nav-main__list,
+    .nav__list {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+
+    .header-main__logo,
+    .header__logo {
+        flex-shrink: 0;
+    }
+
+    .nav-main,
+    .nav {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .nav-main__link,
+    .nav__link {
+        font-size: 10px;
+        line-height: 14px;
+        white-space: nowrap;
+    }
+
+    .logo-main__text,
+    .logo__text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .about-us {
+        padding-top: 44px;
+    }
+
+    .about-us__title {
+        font-size: 64px;
+        line-height: 1;
+    }
+
+    .about-us__title,
+    .format__title,
+    .scheme__title,
+    .history__title,
+    .principles__title,
+    .music__title,
+    .hosting__title,
+    .afisha-note__title,
+    .about__title,
+    .rent__title,
+    .rider__title,
+    .technical__title,
+    .rules__title,
+    .apply__title,
+    .team__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .about-us__title {
+        font-size: 64px;
+        line-height: 1;
+    }
+
+    .afisha-intro__heading,
+    .archive__heading,
+    .cooperation__heading,
+    .team__heading {
+        font-size: clamp(36px, 11vw, 56px);
+        line-height: 1.15;
+    }
+
+    .events__header {
+        font-size: clamp(30px, 9vw, 44px);
+        line-height: 1.15;
+    }
+
+    .about-us__text,
+    .format__text,
+    .scheme__text,
+    .history__text,
+    .principles__intro,
+    .principles__item,
+    .principles__ecology,
+    .music__text,
+    .hosting__text,
+    .hosting__link,
+    .afisha-intro__description,
+    .events__title,
+    .events__description,
+    .afisha-note__text,
+    .archive__subtitle,
+    .archive__description,
+    .archive__title,
+    .archive__event-description,
+    .cooperation__intro,
+    .about__text,
+    .rent__text,
+    .rent__item,
+    .rider__item,
+    .technical__item,
+    .organisation__title,
+    .organisation__item,
+    .philosophy__title,
+    .philosophy__item,
+    .apply__text,
+    .apply__contact,
+    .team__subtitle,
+    .member__name,
+    .member__description,
+    .resident__name,
+    .resident__description {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .archive__list {
+        gap: 24px;
+    }
+
+    .archive__item {
+        max-width: 100%;
+    }
+
+    .footer,
+    .footer-main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .footer__logo,
+    .footer-main__logo {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .history {
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &__title {
+            padding-top: 40px;
+        }
+
+        &__container {
+            padding-top: 20px;
+            padding-bottom: 40px;
+            gap: 16px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .header-main {
+        min-height: 460px;
+
+        &__text {
+            font-size: clamp(34px, 10vw, 42px);
+            line-height: 1.1;
+        }
+
+        &__subtext {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    .about-us__title,
+    .format__title,
+    .scheme__title,
+    .history__title,
+    .principles__title,
+    .music__title,
+    .hosting__title,
+    .afisha-note__title,
+    .about__title,
+    .rent__title,
+    .rider__title,
+    .technical__title,
+    .rules__title,
+    .apply__title,
+    .team__title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .about-us__text,
+    .format__text,
+    .scheme__text,
+    .history__text,
+    .principles__intro,
+    .principles__item,
+    .principles__ecology,
+    .music__text,
+    .hosting__text,
+    .hosting__link,
+    .afisha-intro__description,
+    .events__title,
+    .events__description,
+    .afisha-note__text,
+    .archive__subtitle,
+    .archive__description,
+    .archive__title,
+    .archive__event-description,
+    .cooperation__intro,
+    .about__text,
+    .rent__text,
+    .rent__item,
+    .rider__item,
+    .technical__item,
+    .organisation__title,
+    .organisation__item,
+    .philosophy__title,
+    .philosophy__item,
+    .apply__text,
+    .apply__contact,
+    .team__subtitle,
+    .member__name,
+    .member__description,
+    .resident__name,
+    .resident__description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
